@@ -1,0 +1,42 @@
+/* Existing CSS */
+
+/* Style for print-only class to hide on screen */
+.print-only {
+    display: none; /* Hidden by default on the screen */
+}
+
+/* Media Query for Print */
+@media print {
+    header, nav {
+        display: none;
+    }
+
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-options, .print-btn {
+        display: none;
+    }
+
+    .form-details {
+        padding: 20px;
+    }
+
+    /* Show print-only class when printing */
+    .print-only {
+        display: block; /* Visible only when printing */
+    }
+
+  #qr-code-section:not(.print),
+  .form-selection, .form-details {
+    display: none;
+  }
+}

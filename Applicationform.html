@@ -1,0 +1,732 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="fonts.googleapis.com/css?family=Hind">
+  <link rel="stylesheet" href="Registration form/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
+
+  <title> Sri Lanka e-Passport Portal</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/image/Logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!--Google Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- /*__________________________________________________________________________________*/ -->
+
+  <!-- navbar starts -->
+  <header>
+    <div class="navbar">
+      <div class="main-heading">
+        <div class="logo">
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="Assets/image/Flag.png" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="Assets/image/Flag.png" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="heading">
+          <img class="emblem" src="Assets/image/Logo.png"></img>
+          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">Department of Immigration and Emigration</p>
+          <p class="english-heading" style="font-weight: bold;">ONLINE PASSPORT APPLICATION PORTAL SRI LANKA</p>
+        </div>
+      </div>
+  </header>
+
+  <!-- navbar starts -->
+
+  <div class="fontsetting">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><i class="fa fa-home h2"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="step.html">Steps to e-passport</a>
+                  </li>
+                  <li>
+                      <a href="urgent.html">Urgent Application</a>
+                  </li>
+                  <li>
+                      <a href="DownloadApplications.html">Download Application</a>
+                  </li>
+                  <li>
+                      <a href="passport-fee.html">Passport Fee Info</a>
+                  </li>
+                  <li>
+                      <a href="Applicationform.html">Apply Passport</a>
+                  </li>
+                  <li>
+                      <a href="check-status.html">Check Status</a>
+                  </li>
+                  <li>
+                    <a href="Print Summary.html">Print Summary</a>
+                </li>
+                  <li>
+                    <a href="qrcodefile/index.html">Genarate QR</a>
+                </li>
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+  </div>
+  <!-- font ends -->
+
+
+  <!-- form starts -->
+  <div class="container">
+    <div class="note" id="print">
+      <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
+      <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')"
+        style="cursor: pointer; float: right; margin: 20px 10px 0 0; color: rgb(14, 16, 12);">&#xe8ad;</span>
+    </div>
+    <form>
+      <form action="" class="form1">
+        <div class="formheading">
+          Form 7<br> (See Rules 13(1) and 26) of Registration of applicants Rule-1960
+        </div>
+        <!-- form part 1 starts -->
+        <!-- Form Part 1: Sri Lankan Passport Registration -->
+<div class="descrip">1. Application for Sri Lankan Passport Registration</div>
+<div class="containerFluid part1">
+  <div>To,<br>Immigration and Emigration Department,</div>
+
+  <!-- Province Selection -->
+  <div>
+    <span>Province<sup style="color:rgb(255, 8, 8)">* </sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle province" name="province" id="province" onchange="populateDistricts(this.id,'district')">
+      <option>Choose Province</option>
+      <option value="western">Western</option>
+      <option value="central">Central</option>
+      <option value="southern">Southern</option>
+      <option value="northern">Northern</option>
+      <option value="eastern">Eastern</option>
+      <option value="north_western">North Western</option>
+      <option value="north_central">North Central</option>
+      <option value="uva">Uva</option>
+      <option value="sabaragamuwa">Sabaragamuwa</option>
+    </select>
+  </div>
+<br>
+  <!-- District Selection -->
+  <div>
+    <span>District</span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle district" name="district" id="district" onchange="populateSecretariat(this.id,'divisional_secretariat')">
+      <option>Choose District</option>
+      <option value="colombo">Colombo</option>
+      <option value="gampaha">Gampaha</option>
+      <option value="kalutara">Kalutara</option>
+      <option value="kandy">Kandy</option>
+      <option value="matale">Matale</option>
+      <option value="nuwara_eliya">Nuwara Eliya</option>
+      <option value="galle">Galle</option>
+      <option value="matara">Matara</option>
+      <option value="hambantota">Hambantota</option>
+      <option value="jaffna">Jaffna</option>
+      <option value="kilinochchi">Kilinochchi</option>
+      <option value="mannar">Mannar</option>
+      <option value="vavuniya">Vavuniya</option>
+      <option value="mullaitivu">Mullaitivu</option>
+      <option value="batticaloa">Batticaloa</option>
+      <option value="ampara">Ampara</option>
+      <option value="trincomalee">Trincomalee</option>
+      <option value="kurunegala">Kurunegala</option>
+      <option value="puttalam">Puttalam</option>
+      <option value="anuradhapura">Anuradhapura</option>
+      <option value="polonnaruwa">Polonnaruwa</option>
+      <option value="badulla">Badulla</option>
+      <option value="monaragala">Monaragala</option>
+      <option value="ratnapura">Ratnapura</option>
+      <option value="kegalle">Kegalle</option>      
+    </select>
+  </div>
+  <br>
+  <!-- Divisional Secretariat Selection -->
+  <div>
+    <span>Divisional Secretariat<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select divisional_secretariat" name="divisional_secretariat" id="divisional_secretariat">
+      <option>Choose Secretariat</option>
+      <option value="colombo">Colombo</option>
+      <option value="thimbirigasyaya">Thimbirigasyaya</option>
+      <option value="dehiwala">Dehiwala</option>
+      <option value="homagama">Homagama</option>
+      <option value="kaduwela">Kaduwela</option>
+      <option value="kesbewa">Kesbewa</option>
+      <option value="maharagama">Maharagama</option>
+      <option value="moratuwa">Moratuwa</option>
+      <option value="ratmalana">Ratmalana</option>
+      <option value="seethawaka">Seethawaka</option>
+      <option value="gampaha">Gampaha</option>
+      <option value="negombo">Negombo</option>
+      <option value="katana">Katana</option>
+      <option value="divulapitiya">Divulapitiya</option>
+      <option value="mirigama">Mirigama</option>
+      <option value="minuwangoda">Minuwangoda</option>
+      <option value="attanagalla">Attanagalla</option>
+      <option value="ja_ela">Ja-Ela</option>
+      <option value="wattala">Wattala</option>
+      <option value="kelaniya">Kelaniya</option>
+    </select>
+  </div>
+  <br>
+  <!-- Request Section -->
+  <div class="request">
+    <span class="longerspan">I request the issuance of a Sri Lankan passport under the following reason:</span>
+    <ul class="radio">
+      <li><input type="radio" name="passport_reason" value="first_time"> First-time passport applicant</li>
+      <li><input type="radio" name="passport_reason" value="renewal"> Renewal of expired passport</li>
+    </ul>
+  </div>
+</div>
+<br>
+<!-- Form Part 1 Ends -->
+
+        <!-- fprm part 1 ends -->
+
+<!-- Form Part 2 - Passport Application Details -->
+<div class="descrip">2. Mandatory Specifications</div>
+<div class="containerFluid part2">
+  <div>Below are specifications required for my Sri Lankan passport application.</div>
+  <br>
+  <div>
+    <span>(A) Full Name <sup style="color:rgb(255, 8, 8)"> *</sup> </span>
+    <input type="text" name="fullname_english" id="fullname_english" placeholder="(In English)" required>
+    <input type="text" name="fullname_sinhala_tamil" id="fullname_sinhala_tamil" placeholder="(In Sinhala/Tamil)" required>
+  </div>
+  <br>
+  <div>
+    <span>(B) National Identity Card (NIC) Number <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="text" name="nic_number" id="nic_number" placeholder="Enter NIC Number" required>
+  </div>
+  <br>
+  <div>
+    <span>(D) Date of Birth <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="date" class="date" name="dob" id="dob" required>
+    <div id="dobError" style="color: red; display: none;">You cannot select a date in the current year. Please select a valid date.</div>
+</div>
+
+<script>
+document.getElementById('dob').addEventListener('change', function() {
+    const selectedDate = new Date(this.value);
+    const currentYear = new Date().getFullYear();
+    
+    if (selectedDate.getFullYear() === currentYear) {
+        document.getElementById('dobError').style.display = 'block';
+        this.setCustomValidity('You cannot select a date in the current year.');
+    } else {
+        document.getElementById('dobError').style.display = 'none';
+        this.setCustomValidity('');
+    }
+});
+</script>
+
+  <br>
+  <div>
+    <span>(E) Gender <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="gender" id="gender" required>
+      <option>Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <span>(G) Marital Status <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select marital_status" name="marital_status" id="marital_status" required>
+      <option>Select</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+      <option>Widowed</option>
+    </select>
+  </div>
+<br>
+  <div>
+    <span>(I) Contact Number <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="text" name="contact_number" id="contact_number" placeholder="Enter your contact number" required>
+  </div>
+  <br>
+  <div>
+    <span>(J) Email Address</span>
+    <input type="email" name="email" id="email" placeholder="Enter your email">
+  </div>
+  <br>
+  <div>
+    <span>(K) Type of Passport Required <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select passport_type" name="passport_type" id="passport_type" required>
+      <option>Select</option>
+      <option>Ordinary Passport</option>
+      <option>Official Passport</option>
+      <option>Diplomatic Passport</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <span>(L) Purpose of Passport <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select passport_purpose" name="passport_purpose" id="passport_purpose" required>
+      <option>Select</option>
+      <option>Personal Travel</option>
+      <option>Employment</option>
+      <option>Education</option>
+      <option>Business</option>
+      <option>Other</option>
+    </select>
+  </div>
+</div>
+<!-- Form Part 2 - Passport Application Details Ends -->
+
+
+        <!-- form part 3 starts -->
+        <div class="descrip">3. Current address where applicant is ordinarily resident</div>
+        <div class="conatinerFluid part3">
+          <div>
+            <span>House no. <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+
+          </div>
+          <div>
+            <span>Street / area / location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+
+          </div>
+          <div>
+            <span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+
+          </div>
+          <div>
+            <span>Post Office: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+
+          </div>
+          <div>
+            <span>Pin Code: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="pincode" required onkeypress="return isNumberKey(event);">
+          </div>
+          <div>
+            <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="district" required>
+          </div>
+        </div>
+        <!-- form part 3 ends -->
+
+<!-- Payment Section -->
+<div class="descrip">4. Payment Details</div>
+<div class="containerFluid part3">
+  <div>Provide payment information for passport processing.</div>
+
+  <div>
+    <span>(A) Select Payment Method <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <select class="btn btn-secondary btn-sm dropdown-toggle select payment_method" name="payment_method" id="payment_method" required>
+      <option>Select</option>
+      <option>Bank Transfer</option>
+      <option>Online Payment</option>
+      <option>Credit/Debit Card</option>
+      <option>Mobile Payment</option>
+      <option>Other</option>
+    </select>
+  </div>
+<br>
+  <div>
+    <span>(B) Transaction ID / Reference Number <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="text" name="transaction_id" id="transaction_id" placeholder="Enter Transaction ID" required>
+  </div>
+  <br>
+  <div>
+    <span>(C) Payment Amount (LKR) <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="number" name="payment_amount" id="payment_amount" placeholder="Enter Amount" required>
+  </div>
+  <br>
+  <div>
+    <span>(D) Upload Payment Receipt <sup style="color:rgb(255, 8, 8)"> *</sup></span>
+    <input type="file" name="payment_receipt" id="payment_receipt" accept="image/*, .pdf" required>
+  </div>
+</div>
+<br>
+<!-- Payment Section Ends -->
+        
+
+        <!-- form part 4 starts -->
+        <div class="descrip">5. Optional specialties</div>
+        <div class="conatinerFluid part4">
+          <fieldset>
+            <div>Disability (if any)</div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Visual impairment</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Speech & hearing disability</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Locomotor disability</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">other</span>
+              <!--remove zoomeffect-->
+              <input class="" type="text" style="margin-left: 20px;" required>
+            </div>
+          </fieldset>
+          <div>
+            <span>Email ID (optional) </span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="" required>
+          </div>
+          <div>
+            <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="input" required>
+          </div>
+        </div>
+        <!-- form part 4 ends -->
+
+        <!-- form part 5 starts -->
+        <div class="descrip">
+          6. Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+          <span>
+            <button style="display: contents"><u id="myBtn"><br><span style="font-size: 0.8rem;">List of supported
+                  documents</span></u>
+              <div id="myModal" class="modal" style="width:90vw; font-family: 'Open Sans', sans-serif;">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h4 class="head1">List of Acceptable Supporting Documents For Verification</h4>
+                  <p>
+                  <ol class="ol">
+                    <li>Recent passport size photographs</li>
+                    <li>Address proof (any one of the following)</li>
+                    <ul class="ul">
+                      <li>Copy of your Passport</li>
+                      <li>Gas bill</li>
+                      <li>Water bill</li>
+                      <li>Ration Card</li>
+                      <li>Bank Passbook</li>
+                      <li>Aadhaar Card</li>
+                    </ul>
+                    <li>Copy of proof of age</li>
+                    <ul class="ul">
+                      <li>10th Standard Certificate</li>
+                      <li>Birth Certificate</li>
+                      <li>Pan Card</li>
+                      <li>Aadhaar Card</li>
+                      <li>Driving Licence</li>
+                      <li>Copy of Passport</li>
+                      <li>Kisan Card</li>
+                    </ul class="ul">
+                    <li>Identity proof (any one of the following)</li>
+                    <ul class="ul">
+                      <li>Pan Card</li>
+                      <li>Driving Licence</li>
+                      <li>Ration Card</li>
+                      <li>Passport Copy</li>
+                      <li>Bank Passbook with Photograph</li>
+                      <li>SSLC Certificate</li>
+                      <li>Student ID Card</li>
+                      <li>Aadhaar Card</li>
+                    </ul>
+                  </ol>
+                  </p>
+                </div>
+              </div>
+              </a>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="conatinerFluid part5">
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Your photo<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile1(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+          </div>
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Age proof <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile2(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+
+          </div>
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Address proof<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile3(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+
+          </div>
+          <div>
+            <img style="background-color: white; margin-right: 10px;" id="output1" width="200px" height="200px" />
+            <img style="background-color: white; margin-right: 10px;" id="output2" width="200px" height="200px" />
+            <img style="background-color: white; margin-right: 10px;" id="output3" width="200px" height="200px" />
+          </div>
+
+
+        </div>
+        <!-- form part 5 ends -->
+
+        <!-- form part 6 starts -->
+        <div class="descrip">7. Declaration</div>
+        <div class="containerFluid part6">
+          <div>I hereby declare that to the best of my knowledge and belief:</div>
+          <div>
+              <span class="longerspan">(i) I am a citizen of Sri Lanka and my place of birth is</span>
+              <div style="margin-left: 20px;">              <br>
+                  <div>
+                      <span>City / Village: </span>
+                      <input class="" type="text" name="" id="" required><br>
+                  </div>
+                  <br>
+                  <div>
+                      <span>Province: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                      <select class="btn btn-secondary btn-sm dropdown-toggle province" name="slct1" id="slct1"
+                          onchange="populate(this.id,'slct2')">
+                          <option>Choose Province</option>
+                          <option value="western">Western</option>
+                          <option value="central">Central</option>
+                          <option value="southern">Southern</option>
+                          <option value="northern">Northern</option>
+                          <option value="eastern">Eastern</option>
+                          <option value="north western">North Western</option>
+                          <option value="north central">North Central</option>
+                          <option value="uva">Uva</option>
+                          <option value="sabaragamuwa">Sabaragamuwa</option>
+                      </select>
+                  </div>
+                  <br>
+                  <div>
+                      <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                      <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
+                          <option>Choose District</option>
+                          <option value="colombo">Colombo</option>
+                          <option value="gampaha">Gampaha</option>
+                          <option value="kalutara">Kalutara</option>
+                          <option value="kandy">Kandy</option>
+                          <option value="galle">Galle</option>
+                          <option value="matara">Matara</option>
+                          <option value="kurunegala">Kurunegala</option>
+                          <option value="anuradhapura">Anuradhapura</option>
+                          <option value="badulla">Badulla</option>
+                      </select>
+                      <br>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <span class="longerspan">(ii) I am ordinarily resident at the address given above since Date <sup
+                      style="color:rgb(255, 8, 8);"> * </sup></span>
+              <input class="date" type="date" name="" id="">
+          </div>
+          <div>
+              <span class="longerspan">(iii) I have not applied for a Sri Lankan passport under any other name</span>
+              <div style="margin-left: 25px;">
+                  <ul>
+                      <li>
+                          <input type="radio" name="select" id="">
+                          <span class="longerspan" style="display: block;">I confirm that I have not previously applied for a Sri Lankan passport under any other name.</span>
+                      </li>
+                      <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+                      <li>
+                          <input type="radio" name="select" id="">
+                          <span class="longerspan" style="display: block;">
+                              I may have applied for a Sri Lankan passport under the name:
+                              <input type="text" name="previous_name" id="previous_name" required>
+                              at the following district:
+                              <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="slct4">
+                                <option>Choose District</option>
+                                <option value="colombo">Colombo</option>
+                                <option value="gampaha">Gampaha</option>
+                                <option value="kalutara">Kalutara</option>
+                                <option value="kandy">Kandy</option>
+                                <option value="galle">Galle</option>
+                                <option value="matara">Matara</option>
+                                <option value="kurunegala">Kurunegala</option>
+                                <option value="anuradhapura">Anuradhapura</option>
+                                <option value="badulla">Badulla</option>
+                              </select>
+                              in the province of:
+                              <select class="btn btn-secondary btn-sm dropdown-toggle province" name="slct3" id="slct3"
+                                  onchange="populate(this.id,'slct4')">
+                                  <option>Choose Province</option>
+                                  <option value="western">Western</option>
+                                  <option value="central">Central</option>
+                                  <option value="southern">Southern</option>
+                              </select>
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div style="border-bottom: 3px solid white;"></div>
+          <div>
+            <br>
+              <div>
+                  <span>Location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                  <input class="date" type="text" name="" id="" required>
+              </div>
+              <br>
+              <div>
+                  <span>Date <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                  <input class="date" type="date" name="" id="">
+              </div>
+              <div>
+                  <input type="radio" name="select" id="">
+                  <span class="longerspan">
+                      I am aware that providing false information or misrepresenting facts in this application is punishable under Sri Lankan law.
+                  </span>
+              </div>
+          </div>
+      </div>
+      
+
+
+        <div class="myBtn">
+          <input type="reset" class="btn btn-success resetBtn" value="Reset">
+          <input type="submit" class="btn btn-success submitBtn" value="Submit" id="submitButton">
+        </div>
+
+      </form>
+
+  </div>
+
+
+  <script>
+    $("input#submitButton").click(function () {
+      const name = document.querySelector("#name");
+      const surname = document.querySelector("#surname");
+      const nickname = document.querySelector("#nickname");
+      const relative = document.querySelector("#relative");
+      const relativeregional = document.querySelector("#relativeregional");
+      const nameregional = document.querySelector("#nameregional");
+      const nicknameregional = document.querySelector("#nicknameregional");
+      console.log(name);
+      console.log(nickname);
+      console.log(relative);
+      if (name.value.length == 0 | nickname.value.length == 0 | relative.value.length == 0 | nameregional.value.length == 0 | nicknameregional.value.length == 0 | relativeregional.value.length == 0) {
+        swal("Please fill all the required details", "", "info");
+      } else {
+        swal("Form successfully submitted", "", "success");
+        window.location.href = "submitted.html";
+      }
+    });
+  </script>
+  <script>
+    var loadFile1 = function (event) {
+      var image1 = document.getElementById('output1');
+      image1.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile2 = function (event) {
+      var image = document.getElementById('output2');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile3 = function (event) {
+      var image = document.getElementById('output3');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+
+  </script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+ 
+
+
+  <!-- script for captcha and speaker -->
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="js/video.js"></script>
+  <script>
+    function logout() {
+      window.location.replace("login.html");
+    }
+  </script>
+
+  <script src="./index.js"></script>
+  <script src="Register.js"></script>
+
+</body>
+
+</html>

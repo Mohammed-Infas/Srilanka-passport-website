@@ -1,0 +1,495 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+    color: #003366; /* Sri Lankan government theme color */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Form Selection Styles */
+.form-selection h2 {
+    color: #003366;
+    margin-top: 20px;
+}
+
+.form-options {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.form-options li {
+    margin-bottom: 10px;
+}
+
+.form-options button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #003366; /* Sri Lankan government theme color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-options button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Form Details Styles */
+.hidden {
+    display: none;
+}
+
+.form-details h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.form-details p {
+    line-height: 1.6em;
+    color: #333;
+}
+
+/* Print Button Styles */
+.print-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green for print button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-options, .print-btn {
+        display: none;
+    }
+
+    .form-details {
+        padding: 20px;
+    }
+}
+
+/* --------------------- */
+
+
+/* General Section Styling */
+section {
+    background-image: url();
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Links */
+.links {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Title Styling */
+h4.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+p small {
+    color: #777;
+}
+
+/* Content Divider */
+.content-devider {
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 20px;
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+.content-devider h4 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.content-devider li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.content-devider li::before {
+    content: "✔";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Contact Section */
+.content-devider p br {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h4.title {
+        font-size: 22px;
+    }
+
+    .content-devider {
+        padding: 12px;
+    }
+
+    .content-devider h4 {
+        font-size: 18px;
+    }
+
+    .content-devider li {
+        font-size: 15px;
+    }
+}
+
+/*  ------------------- head ------------------------------ */
+
+.heading {
+    text-align: center;
+  }
+
+  .main-heading {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  #header-image {
+    width: 150px;
+  }
+
+  .navbar {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: rgb(4, 40, 71);
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 29, 49);
+  }
+
+  .header {
+    padding-top: -500px;
+  }
+
+  .endlogo img {
+    width: 160px;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    position: absolute;
+    padding-top: -500px;
+    top: 5%;
+    right: 3%;
+  }
+  
+  
+  .flip {
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    perspective: 1000px; 
+    left: 10px;
+  }
+  
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-front {
+    color: black;
+  }
+  
+  
+  .flip-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+  .hindi-heading {
+    font-size: 2.8rem;
+  }
+  
+  .english-heading {
+    font-size: 2.4rem;
+  }
+  
+  .emblem {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 1310px) {
+    .mobile_view {
+      display: block;
+      transform: scale(1.4);
+    }
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.5rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 4%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .hindi-heading {
+      font-size: 1rem;
+    }
+    .english-heading {
+      font-size: 0.7rem;
+    }
+    .emblem {
+      width: 60px;
+      position: absolute;
+      top: 8%;
+      left: 4%;
+    }
+  }
+/* =---------------------- */
+
+/* Style for active class in navbar with dark background */
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: #ffffff; /* White text for better contrast */
+    font-weight: bold; /* Make the text bold */
+    background-color: #0056b3; /* Distinct blue background color */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 5px 10px; /* Add spacing around the text */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  
+  
+  nav ul li:first-child{
+    background-color: rgb(232, 252, 234);
+  }
+  
+  nav ul li:hover{
+    background-color: rgb(0, 98, 255);
+    border-radius: 15%;
+  }
+  nav ul li:first-child:hover{
+    background-color: rgb(0, 98, 255);
+    border-radius: 15%;
+  }
+  nav ul li a:first-child{
+    color: rgb(0, 98, 255);
+    border-radius: 15%;
+  }
+  nav ul li:hover a{
+    color: #fff;
+  }
+  
+
+  /* --------------------- */
+
+/* Media Query for Print */
+@media print {
+    header, nav {
+        display: none;
+    }
+
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-options, .print-btn {
+        display: none;
+    }
+
+    .form-details {
+        padding: 20px;
+    }
+}
+
+
+/* ----------------------------- */
+
+/* Style for print-only class to hide on screen */
+.print-only {
+    display: none; /* Hidden by default on the screen */
+}
+
+/* Media Query for Print */
+@media print {
+    header, nav {
+        display: none;
+    }
+
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-options, .print-btn {
+        display: none;
+    }
+
+    .form-details {
+        padding: 20px;
+    }
+
+    /* Show print-only class when printing */
+    .print-only {
+        display: block; /* Visible only when printing */
+    }
+}
