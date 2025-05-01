@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* TopNav bar */
+
+.font-weight-bold ms-3 {
+    font-size: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.topNav{
+    font-weight:bold;
+    position: sticky;
+    top:0;
+    z-index: 20;
+}
+
+/* Header */
+header{
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    background-size: cover;
+}
+header h3{
+    font-weight: bold
+}
+
+/* Nav Bar */
+.navbar{
+    padding-top: 0;
+    padding-bottom:0;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 100px;
+    z-index: 20;
+    clear: both;
+}
+
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0px 10px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+nav ul li a{
+    color: rgb(5, 93, 148);
+    text-decoration: none;
+    font-size:15px;
+    font-weight: bold;
+}
+
+nav ul li:first-child{
+    background-color: rgb(232, 252, 234);
+}
+
+nav ul li:hover{
+    background-color: rgb(0, 98, 255);
+}
+nav ul li:first-child:hover{
+    background-color: rgb(0, 98, 255);
+}
+nav ul li a:first-child{
+    color: rgb(0, 98, 255);
+}
+nav ul li:hover a{
+    color: #fff;
+}
+
+/* Home card */
+/* .goog-te-combo option{
+    display: none;
+} */
+.goog-te-combo{
+    width: 30%;
+    margin: 0 auto;
+}
+#google_translate_element{
+    background:#075E24;;
+}
+.goog-te-banner-frame{
+    visibility: hidden;
+    display: none;
+    background:#075E24;
+}
+#google_translate_element span{
+    display: none;
+}
+.cards h6{
+    margin-left: -50px;
+}
+
+/* Notice Board */
+
+.notice-list{
+    margin-top: 40px;
+}
+.notice-list li{
+    margin: 10px 0px;
+}
+
+.top1{
+    display: none;
+}
+
+.left-logo img[alt="left-logo"] {
+    width: 65px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.left-logo img[alt="Right-logo"] {
+    width: 140px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/*  -----------------------------new ------------------------------------ */
+
+
+
+/* Styling for the top navigation */
+.topNav {
+    background: #075E24; /* Green background color */
+  }
+  
+  .topNav .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .topNav .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .topNav .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-logo img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .left-logo h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .left-logo .ms-3 {
+    margin-left: 15px;
+  }
+  
+  /* Styling for the second logo and text */
+  .left-logo .me-3 {
+    margin-right: 15px;
+  }
+  
+  .topNav .col-md-6 .text-end {
+    text-align: end;
+  }
+  
+  .topNav .col-md-6 h6 {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .topNav .col-md-6 img {
+    max-width: 45px;
+    height: auto;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .topNav .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .topNav .col-md-6 {
+      margin-bottom: 10px;
+    }
+  
+    .left-logo img {
+      max-width: 40px;
+    }
+  
+    .left-logo h6 {
+      font-size: 0.9rem;
+    }
+  
+    .topNav .col-md-6 h6 {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ------------------------------------------------ */
+
+  /* Styling for the title section */
+.titleTop.top1 {
+    position: sticky;
+    top: 100px;
+    background: #0d0909; /* Dark background color */
+    z-index: 20;
+  }
+  
+  .titleTop .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .titleTop .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portal-title {
+    text-align: center;
+  }
+  
+  .portal-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .portal-title h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+
+/* ----------------------------------------------------------------------------- */
+
+.about-us {
+    background: #f8f9fa; /* Light background */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.vision, .mission {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+}
+
+.vision h3, .mission h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vision, .mission {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .vision, .mission {
+        width: 100%;
+    }
+}
+
+
+
+.btn-group {
+    margin-left: 650px; /* Pushes the buttons to the right */
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 5px; /* Adds some space between buttons */
+    padding-left: 150px;
+}
+
+.btn-group button {
+    padding: 8px 6px; /* Adjust button size */
+}
+
+.btn-group2{
+    padding-left: 200px;
+}
+
+footer {
+    background-image: url('assets/image/footer.png');
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    width: 100%;
+    min-height: 300px; /* Ensures a minimum height */
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    align-items: center; /* Vertically aligns content */
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-size: contain; /* Adjusts the image for smaller screens */
+    }
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .text-center {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/* Resposive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .topNav, header{
+        display: none;
+    }
+    .navbar{
+        position: sticky;
+        top: 200px;
+        border-bottom: 2px solid rgb(177, 177, 177);
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px 5px rgba(0,0,0,00.2);
+        padding: 10px 0px;
+    }
+    .top1{
+        display: block;
+        
+    }
+}
+
+
+/* -------head------------------------------------------------------------------- */
+
+
+header section {
+    background-image: url('assets/image/srii');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Keeps the image centered */
+    background-attachment: fixed; /* Makes the background image fixed during scrolling */
+    height: 100vh; /* Sets the height of the section to the full height of the viewport */
+  }
+  
+  .container {
+    z-index: 10;
+  }
+  
+  .row {
+    height: 100%;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .btn-group .btn {
+    margin-right: 10px;
+  }
+  
+  /* Styling for cards */
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .d-flex .content {
+    flex: 1;
+  }
+  
+  .d-flex p {
+    color: #333;
+  }
+  
+  .d-flex h6 {
+    font-weight: bold;
+  }
+  
+  .d-flex .btn {
+    background: #fe1e50;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .d-flex .btn:hover {
+    background-color: #ff1a75;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    header section {
+      background-attachment: scroll; /* Disables fixed background on small screens */
+    }
+  
+    .btn-group .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 2rem;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+    }
+  
+    .d-flex .content {
+      margin-bottom: 10px;
+    }
+  }
+  
+

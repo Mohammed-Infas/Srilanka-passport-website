@@ -1,0 +1,297 @@
+.title{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 35px 0px;
+}
+.content-devider h4{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.content-devider p{
+    font-size: 14px;
+}
+
+/* -------------------------------------- */
+
+
+/* General Section Styling */
+section {
+    background-image: url();
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Links */
+.links {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Title Styling */
+h4.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+p small {
+    color: #777;
+}
+
+/* Content Divider */
+.content-devider {
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 20px;
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+.content-devider h4 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.content-devider li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.content-devider li::before {
+    content: "✔";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Contact Section */
+.content-devider p br {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h4.title {
+        font-size: 22px;
+    }
+
+    .content-devider {
+        padding: 12px;
+    }
+
+    .content-devider h4 {
+        font-size: 18px;
+    }
+
+    .content-devider li {
+        font-size: 15px;
+    }
+}
+
+/*  ------------------- head ------------------------------ */
+
+.heading {
+    text-align: center;
+  }
+
+  .main-heading {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  #header-image {
+    width: 150px;
+  }
+
+  .navbar {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: rgb(4, 40, 71);
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 29, 49);
+  }
+
+  .header {
+    padding-top: -500px;
+  }
+
+  .endlogo img {
+    width: 160px;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    position: absolute;
+    padding-top: -500px;
+    top: 5%;
+    right: 3%;
+  }
+  
+  
+  .flip {
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    perspective: 1000px; 
+    left: 10px;
+  }
+  
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-front {
+    color: black;
+  }
+  
+  
+  .flip-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+  .hindi-heading {
+    font-size: 2.8rem;
+  }
+  
+  .english-heading {
+    font-size: 2.4rem;
+  }
+  
+  .emblem {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 1310px) {
+    .mobile_view {
+      display: block;
+      transform: scale(1.4);
+    }
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.5rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 4%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .hindi-heading {
+      font-size: 1rem;
+    }
+    .english-heading {
+      font-size: 0.7rem;
+    }
+    .emblem {
+      width: 60px;
+      position: absolute;
+      top: 8%;
+      left: 4%;
+    }
+  }
+
+  /* ------------------------------------------------------- */
+  
+.Footer-p {
+  color: white;
+}

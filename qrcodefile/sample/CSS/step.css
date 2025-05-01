@@ -1,0 +1,283 @@
+.title{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 35px 0px;
+}
+.content-devider h4{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content-devider p{
+    font-size: 14px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* General Styles */
+body {
+    background-image: url();
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+}
+
+/* Container */
+.container {
+    position: relative; /* Allows it to scroll with the page */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Links */
+.links {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.links small {
+    color: #777;
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Date */
+.contents p small {
+    color: #777;
+}
+
+/* Content Divider */
+.content-devider {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+.content-devider h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+.content-devider li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.content-devider a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .content-devider {
+        padding: 10px;
+    }
+    
+    .content-devider h4 {
+        font-size: 18px;
+    }
+}
+
+
+/*  ------------------- head ------------------------------ */
+
+.heading {
+    text-align: center;
+  }
+
+  .main-heading {
+    margin: 0 auto;
+  }
+
+  #header-image {
+    width: 150px;
+  }
+
+  .navbar {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: rgb(4, 40, 71);
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 29, 49);
+  }
+
+  .endlogo img {
+    width: 160px;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+  }
+  
+  
+  .flip {
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    perspective: 1000px; 
+    left: 10px;
+  }
+  
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-front {
+    color: black;
+  }
+  
+  
+  .flip-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+  .hindi-heading {
+    font-size: 2.8rem;
+  }
+  
+  .english-heading {
+    font-size: 2.4rem;
+  }
+  
+  .emblem {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 1310px) {
+    .mobile_view {
+      display: block;
+      transform: scale(1.4);
+    }
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.4rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hindi-heading {
+      font-size: 1.8rem;
+    }
+    .english-heading {
+      font-size: 1.5rem;
+    }
+    .emblem {
+      width: 90px;
+      position: absolute;
+      top: 10%;
+      left: 4%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .hindi-heading {
+      font-size: 1rem;
+    }
+    .english-heading {
+      font-size: 0.7rem;
+    }
+    .emblem {
+      width: 60px;
+      position: absolute;
+      top: 8%;
+      left: 4%;
+    }
+  }
+
+  /* ------------------------------------------------------- */
